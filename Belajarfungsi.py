@@ -16,7 +16,6 @@ penjumlahan(True)
 penjumlahan(False)
 penjumlahan(0)
 
-"""
 print("\nini fungsi tanpa parameter dengan return value")
 
 x = int(input("masukkan nilai = "))
@@ -45,19 +44,18 @@ penjumlahan(76.5 , 50.0)
 
 def pengulangan_kata(kata):
     jum_char = len(kata)
-    hitung = int(jum_char)
     x = 0
     while x != jum_char:
         print("index ke-", x, " hurufnya adalah ", kata[x])
         x = x+1
-        while True:
-            if kata[x] = ' ':
-                print("ada spasi")
-    print("jumlah karakter yang ada pada kata ini adalah = ", jum_char)   
+    spasi = kata.count(' ') 
+    print("jumlah spasi adalah ", spasi)
+    print("jumlah karakter yang ada pada kata ini adalah = ", jum_char) 
+    print("jumlah huruf dalam kata adalah = ", jum_char - spasi)
+    
     
 pengulangan_kata(input("masukkan kata = "))
 
-"""
 
 #latihan dari freecodecamp.org
 
