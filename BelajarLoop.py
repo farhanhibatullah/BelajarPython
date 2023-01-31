@@ -39,3 +39,35 @@ for y in n:
         min_num = y
     print(min_num, y)
 print("After: nilai terbesar saat ini adalah ", min_num)
+
+#buat penjumlahan dengan perulangan dan percabangan
+#tampilkan pesan error "Invalid Input" menggunakan try and except
+
+jumlah_iterasi = 0
+total = 0
+
+#proses perulangan
+while True:
+    nilai = input("masukkan nilai = ")
+    #proses percabangan
+    if nilai == 'done':
+        print("selesai")
+        break
+    
+    #proses try (Menangkap dan memeriksa input User)
+    try:
+        float_nilai = float(nilai)
+    
+    #proses yang akan ditampilkan apabila terjadi error
+    except:
+        print("Invalid Input")
+        continue    #sintaks yang digunakan untuk melanjutkan perulangan
+    
+    print(float_nilai)
+    jumlah_iterasi = jumlah_iterasi + 1
+    total = total + float_nilai
+
+print("Total nilai adalah = ", total)
+print("Jumlah input yang dimasukkan = ", jumlah_iterasi)
+print("Hasil bagi total dan jumlah input = ", total/jumlah_iterasi)
+    
