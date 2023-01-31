@@ -13,3 +13,29 @@ indeks = [0,1,2,3,4,5,6,7]
 for x in indeks:
     print("indeks ke-", indeks[x], "angkanya adalah ", n[x])
 print("jumlah angka 1 di dalam list adalah ", n.count(1))
+
+#latihan freecodecamp.org
+
+#mencari nilai terbesar dan terkecil
+
+n = [34, 20, 9, 17, 6, 2, 100, 101, 103, 99, 98, 97, 102, -1, 0, -100]
+
+#metode pencarian nilai terbesar
+
+max_num = -1
+print("nilai terbesar saat ini adalah", max_num)
+for x in n:
+    if x > max_num:
+        max_num = x
+    print(max_num, x)
+print("nilai terbesar saat ini adalah ", max_num)
+
+#metode pencarian nilai terkecil
+
+min_num = 1000
+print("nilai terkecil saat ini adalah", min_num)
+for y in n:
+    if y < min_num:
+        min_num = y
+    print(min_num, y)
+print("nilai terbesar saat ini adalah ", min_num)
