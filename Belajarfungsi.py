@@ -16,6 +16,7 @@ penjumlahan(True)
 penjumlahan(False)
 penjumlahan(0)
 
+"""
 print("\nini fungsi tanpa parameter dengan return value")
 
 x = int(input("masukkan nilai = "))
@@ -49,6 +50,41 @@ def pengulangan_kata(kata):
     while x != jum_char:
         print("index ke-", x, " hurufnya adalah ", kata[x])
         x = x+1
+        while True:
+            if kata[x] = ' ':
+                print("ada spasi")
     print("jumlah karakter yang ada pada kata ini adalah = ", jum_char)   
-    print("hellow world")
+    
 pengulangan_kata(input("masukkan kata = "))
+
+"""
+
+#latihan dari freecodecamp.org
+
+sh = input("\nenter hours: ")
+sr = input("enter rate: ")
+fh = float(sh)
+fr = float(sr)
+
+if fh > 40 :
+	reg = fr * fh
+	otp = (fh - 40.0) * (fr * 0.5)
+	xp = reg + otp
+else :
+	xp = fr * fh
+print("Pay:", xp)
+
+#ubah ke fungsi computepay(hours, rate)
+
+def computepay(hours, rate):
+    fl_hours = float(hours)
+    fl_rate = float(rate)
+    if fl_hours > 40:
+        reg = fl_hours * fl_rate
+        otp = (fl_hours - 40.0) * (fl_rate * 0.5)
+        xp = reg + otp
+    else : 
+        xp = fl_hours * fl_rate
+    print("Pay:", xp)
+    
+computepay(45, 10)
