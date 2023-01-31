@@ -49,7 +49,6 @@ def pengulangan_kata(kata):
     while x != jum_char:
         print("index ke-", x, " hurufnya adalah ", kata[x])
         x = x+1
-    print("jumlah karakter yang ada pada kata ini adalah = ", jum_char)
-        
-    
+    print("jumlah karakter yang ada pada kata ini adalah = ", jum_char)   
+    print("hellow world")
 pengulangan_kata(input("masukkan kata = "))
