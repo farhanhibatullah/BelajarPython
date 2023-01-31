@@ -22,20 +22,20 @@ n = [34, 20, 9, 17, 6, 2, 100, 101, 103, 99, 98, 97, 102, -1, 0, -100]
 
 #metode pencarian nilai terbesar
 
-max_num = -1
-print("nilai terbesar saat ini adalah", max_num)
+max_num = None
+print("Before: nilai terbesar saat ini adalah", max_num)
 for x in n:
-    if x > max_num:
+    if max_num is None or x > max_num:
         max_num = x
     print(max_num, x)
-print("nilai terbesar saat ini adalah ", max_num)
+print("After: nilai terbesar saat ini adalah ", max_num)
 
 #metode pencarian nilai terkecil
 
-min_num = 1000
-print("nilai terkecil saat ini adalah", min_num)
+min_num = None
+print("Before: nilai terkecil saat ini adalah", min_num)
 for y in n:
-    if y < min_num:
+    if min_num is None or y < min_num:
         min_num = y
     print(min_num, y)
-print("nilai terbesar saat ini adalah ", min_num)
+print("After: nilai terbesar saat ini adalah ", min_num)
