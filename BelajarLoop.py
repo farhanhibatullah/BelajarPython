@@ -5,7 +5,6 @@ while n > 0:
     n = n - 1
 print("mulai")
 
-
 #for loop
 n = [1,1,1,1,2,1,1,1]
 indeks = [0,1,2,3,4,5,6,7]
